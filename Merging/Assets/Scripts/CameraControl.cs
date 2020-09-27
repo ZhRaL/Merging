@@ -7,8 +7,8 @@ public class CameraControl : MonoBehaviour
     private Camera camera;
 
     private Vector3 touchStart;
-    private float zoomOutMin=10;
-    private float zoomOutmax=80;
+    private float zoomOutMin=2;
+    private float zoomOutmax=8;
 
     void Start()
     {
@@ -38,7 +38,6 @@ public class CameraControl : MonoBehaviour
             zoom(difference * 0.01f);
         }else if (Input.GetMouseButton(0))
         {
-            Debug.Log("Here");
             Vector3 direction = touchStart - camera.ScreenToWorldPoint(Input.mousePosition);
             camera.transform.position += direction;
         }
