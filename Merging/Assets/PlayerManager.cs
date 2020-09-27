@@ -20,4 +20,6 @@ public class PlayerManager : MonoBehaviour
 
     private void setGold(int i) { gold = i; }
     private void setDiamants(int i) { diamants = i; }
+
+    //Hi Babe :)
 }
